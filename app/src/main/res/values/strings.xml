@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="fullNameIn">Enter your full name.</string>
+    <string name="fullName">Full Name:</string>
+    <string name="email">Email:</string>
+    <string name="emailIn">Enter your email.</string>
+    <string name="Password">Password:</string>
+    <string name="passwordIn">Enter your Password</string>
+    <string name="conPass">Confirm Password:</string>
+    <string name="conPassIn">Enter your password again.</string>
+    <string name="check">I agree to the terms and conditions.</string>
+    <string name="sUp">Sign Up</string>
+    <string name="sIn">Sign In</string>
+    <string name="haveAcc">Already have an account?</string>
+    <string name="forgotPass">Forgot Password? Do not worry,we have it covered.</string>
+    <string name="forPass">Forgot Password</string>
+    <string name="forgotPassDetails">Do not worry! Your password will be recovered in a few moments. Enter your email id below to reset your passsword</string>
+    <string name="reset">Reset Password</string>
+    <string name="view">View</string>
+    <string name="hide">Hide</string>
+    <string name="explore">Explore Memories</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+
+    <string name="passReset">Your password has been reset to 12345.</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="textSearch">Search</string>
+    <string name="hintSearch">Enter the term to search</string>
+
+    <string name="term1">Pretty Dogs</string>
+    <string name="term2">Cute Dogs</string>
+    <string name="term3">Dogs so cute they make you cry</string>
+    <string name="term4">Golden Retrievers</string>
+    <string name="term5">Very good boi chasing squirrels</string>
+    <string name="term6">Corgis</string>
+
+
+
+</resources>

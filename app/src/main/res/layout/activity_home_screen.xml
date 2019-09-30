@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_sc"
+        android:layout_width="405dp"
+        android:layout_height="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361">
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="185dp"
+            android:layout_height="119dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@mipmap/pic2_foreground" />
+
+        <ImageView
+            android:id="@+id/pic4"
+            android:layout_width="199dp"
+            android:layout_height="122dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@mipmap/pic3_foreground" />
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="182dp"
+            android:layout_height="122dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@mipmap/pic4_foreground" />
+
+        <ImageView
+            android:id="@+id/pic5"
+            android:layout_width="198dp"
+            android:layout_height="140dp"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@mipmap/pic5_foreground" />
+
+        <ImageView
+            android:id="@+id/pic6"
+            android:layout_width="185dp"
+            android:layout_height="139dp"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@mipmap/pic6_foreground" />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="199dp"
+            android:layout_height="120dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@mipmap/pic1_foreground" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="414dp"
+        android:layout_height="481dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <TextView
+        android:id="@+id/homesc"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="104dp"
+        android:text="@string/explore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
