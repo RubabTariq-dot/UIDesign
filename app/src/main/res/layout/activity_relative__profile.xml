@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".Relative_Profile">
+
+
+    <ScrollView
+        android:layout_width="383dp"
+        android:layout_height="554dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="417dp"
+            android:layout_height="725dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="296dp"
+                android:layout_height="148dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="91dp"
+                android:src="@mipmap/profile_pic_round" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="177dp"
+                android:layout_height="47dp"
+                android:layout_below="@+id/profile_pic"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="51dp"
+                android:text="@string/EMAIL"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/passDis"
+                android:layout_width="178dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/mail"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/passDis"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="177dp"
+                android:layout_height="43dp"
+                android:layout_below="@+id/passDis"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/Phone" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="177dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/phone"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="-2dp"
+                android:text="@string/Location" />
+
+            <TextView
+                android:id="@+id/gende"
+                android:layout_width="177dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/location"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/gender" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gende"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/male"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="485dp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="177dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/male"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/female" />
+
+            <Button
+                android:id="@+id/logout2"
+                android:layout_width="102dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="231dp"
+                android:layout_marginTop="507dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="#FDD835"
+                android:text="@string/logout" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

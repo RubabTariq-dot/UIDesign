@@ -40,7 +40,23 @@
     <string name="term4">Golden Retrievers</string>
     <string name="term5">Very good boi chasing squirrels</string>
     <string name="term6">Corgis</string>
+    <string name="term7">Smol Puppers</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Search</string>
+    <string name="tab_text_3">Profile</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_">Rubab Tariq</string>
+    <string name="EMAIL">rubabzahrat@gmail.com</string>
+    <string name="Phone">03214227841</string>
+    <string name="Location">Lahore,Pakistan</string>
+    <string name="passDis">******</string>
 
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="logout">Log Out</string>
+    <string name="relativeLayout">Relative Layout</string>
 
 </resources>

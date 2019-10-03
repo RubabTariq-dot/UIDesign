@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -15,13 +16,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="57dp"
-        android:background="@color/color6"
-        >
-
+        android:background="@drawable/back1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+
             <EditText
                 android:id="@+id/fullNameIn"
                 android:layout_width="274dp"
@@ -31,6 +32,9 @@
                 android:foregroundTint="#D81B60"
                 android:hint="@string/fullNameIn"
                 android:inputType="textPersonName"
+                android:textColor="#E5E7EE"
+                android:textColorHint="#FDD835"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/FullName"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/FullName"
@@ -54,7 +58,7 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="24dp"
                 android:background="@color/color3"
-            android:text="@string/email"
+                android:text="@string/email"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.106"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +72,8 @@
                 android:ems="10"
                 android:hint="@string/emailIn"
                 android:inputType="textEmailAddress"
+                android:textColorHint="#FDD835"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/Email"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/Email"
@@ -93,6 +99,8 @@
                 android:ems="10"
                 android:hint="@string/passwordIn"
                 android:inputType="textPassword"
+                android:textColorHint="#FDD835"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/Password"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/Password"
@@ -132,6 +140,8 @@
                 android:ems="10"
                 android:hint="@string/conPassIn"
                 android:inputType="textPassword"
+                android:textColorHint="#FDD835"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/conPassword"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/conPassword"
@@ -142,10 +152,11 @@
                 android:layout_width="107dp"
                 android:layout_height="39dp"
                 android:layout_marginStart="272dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/color5"
                 android:text="@string/sUp"
                 app:layout_constraintEnd_toEndOf="@+id/checkBox"
+                app:layout_constraintHorizontal_bias="0.402"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -153,26 +164,24 @@
                 android:id="@+id/signIn"
                 android:layout_width="98dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginStart="56dp"
                 android:backgroundTint="@color/color5"
                 android:foregroundTint="#5E35B1"
                 android:text="@string/sIn"
-                app:layout_constraintEnd_toEndOf="@+id/logo"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/oldAcc"
-                app:layout_constraintTop_toBottomOf="@+id/logo" />
+                app:layout_constraintTop_toBottomOf="@+id/oldAcc" />
 
             <TextView
                 android:id="@+id/oldAcc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="68dp"
+                android:layout_marginTop="56dp"
+                android:background="@color/color3"
                 android:text="@string/haveAcc"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintHorizontal_bias="0.204"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/logo" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <CheckBox
                 android:id="@+id/passCheck"
@@ -181,20 +190,11 @@
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="8dp"
                 android:text="@string/view"
+                android:background="@color/color3"
                 app:layout_constraintBottom_toTopOf="@+id/passwordIn"
                 app:layout_constraintStart_toEndOf="@+id/Password"
                 app:layout_constraintTop_toBottomOf="@+id/emailIn"
                 app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="190dp"
-                android:layout_height="133dp"
-                android:layout_marginStart="72dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/oldAcc"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/logo_foreground" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

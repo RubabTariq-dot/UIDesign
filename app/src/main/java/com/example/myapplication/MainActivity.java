@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -13,6 +11,10 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.ui.main.Frag_Home;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
          e3 = (EditText)findViewById(R.id.fullNameIn);
          e4 = (EditText)findViewById(R.id.emailIn);
 
-         logo=(ImageView)findViewById(R.id.logo);
-
 
         super.onCreate(savedInstanceState);
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToSignIn=new Intent(MainActivity.this,Sign_In.class);
+                Intent goToSignIn=new Intent(MainActivity.this,SignIn.class);
                 startActivity(goToSignIn);
             }
         });
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToHomeScreen=new Intent(MainActivity.this,HomeScreen.class);
+                Intent goToHomeScreen=new Intent(MainActivity.this, HomeScreen.class);
                 startActivity(goToHomeScreen);
             }
         });
